@@ -51,7 +51,7 @@
 
         <!-- Library Versions -->
         <junit.version>4.10</junit.version>
-        <log4j.version>1.2.6</log4j.version>
+        <log4j.version>1.2.17</log4j.version>
         <commons.logging.version>1.1.1</commons.logging.version>
 
     </properties>
