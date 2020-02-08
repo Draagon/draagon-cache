@@ -12,3 +12,5 @@ buildNumber.properties
 .DS_Store
 .svn
 output
+*.iml
+.idea
