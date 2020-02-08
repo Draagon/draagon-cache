@@ -36,8 +36,6 @@ import org.apache.commons.logging.LogFactory;
  * 
  * @param <F> The class for the key
  * @param <E> The class for the cached value
- * 
- * @see com.draagon.util.cache.CacheManager
  */
 public class Cache<F, E> implements Map<F, E> {
 
@@ -192,7 +190,7 @@ public class Cache<F, E> implements Map<F, E> {
      * after the specified interval. If set to true, then each time the get()
      * method is called, it will reset the timer to prevent a timeout.
      * 
-     * @param boolean Set the state of the reset cache
+     * @param state boolean Set the state of the reset cache
      */
     public void setResetCache(boolean state) {
         resetCache = state;
@@ -271,8 +269,8 @@ public class Cache<F, E> implements Map<F, E> {
     /**
      * Caches the passed item, identifying it by the passed key value.
      * 
-     * @param Object Key object used to identify the property
-     * @param Object Value object used to hold the property value
+     * @param key Object Key object used to identify the property
+     * @param value Object Value object used to hold the property value
      * 
      * @return <code>Object</code> - A cache object containing the key and value
      *         objects
@@ -302,7 +300,7 @@ public class Cache<F, E> implements Map<F, E> {
      * reset cache flag is set to true, it will also reset the timestamp to
      * prevent the item from timing out.
      * 
-     * @param Object Key object used to identify the property
+     * @param key Object Key object used to identify the property
      * 
      * @return <code>Object</code> - A cache object containing the key and value
      *         objects
@@ -326,7 +324,7 @@ public class Cache<F, E> implements Map<F, E> {
      * reset cache flag is set to true, it will also reset the timestamp to
      * prevent the item from timing out.
      * 
-     * @param Object Key object used to identify the property
+     * @param key Object Key object used to identify the property
      * 
      * @return <code>Object</code> - A cache object containing the key and value
      *         objects
@@ -357,7 +355,7 @@ public class Cache<F, E> implements Map<F, E> {
     /**
      * Removes the cached item specified by the passed key object from the cache
      * 
-     * @param Object Key object used to identify the property
+     * @param key Object Key object used to identify the property
      * 
      * @return <code>Object</code> - A cache object containing the key and value
      *         objects
