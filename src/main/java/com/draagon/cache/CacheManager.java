@@ -128,7 +128,11 @@ public final class CacheManager implements Runnable {
         // if ( DEBUG ) System.out.println( "#CACHE# Cache handler stopping..." );
     }
 
-    /** Inserts a Cache by it's timing order */
+    /**
+     * Inserts a Cache by it's timing order
+     *
+     * @param cw CacheWrap used to extract the time
+     */
     protected void insertByTime(CacheWrap cw) {
 
         synchronized( entities ) {
