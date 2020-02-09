@@ -10,7 +10,7 @@
     
     <groupId>com.draagon</groupId>
     <artifactId>draagon-cache</artifactId>
-    <version>3.7.0</version>
+    <version>3.7.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Draagon Expiring Cache</name>
@@ -21,7 +21,7 @@
         <connection>scm:git:git://github.com/Draagon/draagon-cache.git</connection>
         <developerConnection>scm:git:git@github.com:Draagon/draagon-cache.git</developerConnection>
         <url>https://github.com/Draagon/draagon-cache</url>
-        <tag>draagon-cache-3.7.0</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <organization>
